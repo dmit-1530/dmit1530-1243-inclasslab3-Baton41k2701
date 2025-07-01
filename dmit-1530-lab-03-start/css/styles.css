@@ -23,6 +23,7 @@ body {
 h1 {
     font-size: 1.65rem;
     font-weight: normal;
+    margin-bottom: 2rem;
 }
 
 /* Header Styles */
@@ -34,5 +35,72 @@ header {
     padding: 0.5rem;
 }
 
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;   
+}
+
+.icon-container {
+  position: relative;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+
+
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
+.number {
+  position: absolute;
+  top: -9px;
+  right: -2px;
+  background-color: var(--rose-700);
+  color: var(--slate-50);
+  font-size: 0.75rem;
+  font-weight: normal;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+}
+
+.container {
+  width: 100%;
+}
+
 /* Media Query */
 
+@media screen and (min-width:740px) {
+ .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+  }
+
+  h1 {
+    margin-bottom: 0;
+  }
+
+  .menu {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu li {
+    margin-bottom: 0;
+  }
+}
